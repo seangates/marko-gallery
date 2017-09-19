@@ -1,0 +1,30 @@
+class {
+  onCreate() {
+    this.state = {
+      showImageDetails: false,
+      selectedImage: {}
+    }
+  }
+  onImageClicked(data) {
+    this.state.showImageDetails = true;
+    this.state.selectedImage = data;
+  }
+  onCloseDetails() {
+    this.state.showImageDetails = false;
+    this.state.selectedImage = {};
+  }
+  onChangeImage(data) {
+    console.log(data);
+    this.state.selectedImage = data;
+  }
+}
+
+<div.image-gallery>
+  <ig-header />
+  <ig-list images=data.images on-imageClicked('onImageClicked') />
+  <ig-details
+    isHidden=state.showImageDetails
+    image-data=state.selectedImage
+    on-closeDetails('onCloseDetails')
+    on-changeImage('onChangeImage') />
+</div>

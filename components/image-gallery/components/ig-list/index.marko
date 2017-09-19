@@ -1,0 +1,33 @@
+class {
+  onCreate() {
+    this.state = {
+      currentImage: {}
+    }
+  }
+  
+  imageClicked(evt, el) {
+    evt.preventDefault();
+
+    let images = require('../../../../data/images');
+
+    let imageData = images[parseInt(el.dataset.imageId) - 1];
+
+    this.emit('imageClicked', imageData);
+  }
+}
+
+<div.ig-list-container>
+  <div.container>
+    <ul.ig-list>
+      <li.ig-list-item for(image in data.images)>
+        <a
+          href=image.url
+          on-click('imageClicked')
+          data-image-name=image.name
+          data-image-id=image.id>
+          <img src=image.url/>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

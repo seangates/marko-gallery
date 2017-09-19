@@ -1,0 +1,35 @@
+.ig-list-container {
+  margin-top: 4rem;
+}
+
+.ig-list {
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: .5vw;
+}
+
+.ig-list-item {
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  height: 8rem;
+  margin: .5vw;
+  overflow: hidden;
+  width: 8rem;
+
+  img {
+    cursor: pointer;
+    height: 8rem;
+    object-fit: cover;
+    width: 100%;
+  }
+}

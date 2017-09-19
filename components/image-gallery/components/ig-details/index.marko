@@ -1,0 +1,44 @@
+<div class=['ig-details', { 'show_details': input.isHidden, 'no_tools': state.noTools }]>
+  <header>
+    <h2.image-name>${input.imageData.name}</h2>
+    <span.close-btn>
+      <button.close on-click('closeDetails') on-touchStart('closeDetails')>
+        <img class='icon' src='/public/icons/ic_clear_white_24px.svg'/>
+        <span class='icon__text'>X</span>
+      </button>
+    </span>
+  </header>
+  <a href='javascript:void(0);' on-click('toggleTools') class='image-body__container'>
+    <div.image-body>
+      <img src=input.imageData.url />
+    </div>
+  </a>
+  <footer>
+    <nav>
+      <span>
+        <button.plus-one on-click('footerAction', '+1')>
+          <img class='icon' src='/public/icons/ic_plus_one_white_24px.svg'/>
+          <span class='icon__text'>+1</span>
+        </button>
+      </span>
+      <span>
+        <button.comment on-click('footerAction', 'Comment')>
+          <img class='icon icon__flipped' src='/public/icons/ic_comment_white_24px.svg'/>
+          <span class='icon__text'>Comment</span>
+        </button>
+      </span>
+      <span>
+        <button.add on-click('footerAction', 'Add')>
+          <img class='icon' src='/public/icons/ic_add_white_24px.svg'/>
+          <span class='icon__text'>Add</span>
+        </button>
+      </span>
+      <span>
+        <button.share on-click('footerAction', 'Share')>
+          <img class='icon icon__flipped' src='/public/icons/ic_reply_white_24px.svg'/>
+          <span class='icon__text'>Share</span>
+        </button>
+      </span>
+    </nav>
+  </footer>
+</div>

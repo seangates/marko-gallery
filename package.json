@@ -1,0 +1,27 @@
+{
+  "name": "marko-gallery",
+  "version": "1.0.0",
+  "description": "An example of Marko used to build an image gallery.",
+  "repository": {
+    "url": "git@bitbucket.org:seangates/marko-gallery.git",
+    "type": "git"
+  },
+  "author": "Sean Gates <oregonwebdev@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npm run clean && node index.js",
+    "clean": "rm -rf .cache/ $(find . -name '*.marko.js')"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "hammerjs": "^2.0.8",
+    "lasso": "^2.11.14",
+    "lasso-autoprefixer": "^2.0.0",
+    "lasso-babel": "^1.0.3",
+    "lasso-less": "^2.4.5",
+    "lasso-marko": "^2.3.0",
+    "lasso-require": "^3.4.5",
+    "marko": "^4.4.19",
+    "marko-starter": "^1.1.14"
+  }
+}
