@@ -1,4 +1,10 @@
-<div class=['ig-details', { 'show_details': input.isHidden, 'no_tools': state.noTools }]>
+<div class=[
+  'ig-details',
+  {
+    'show_details': input.isHidden,
+    'hide_details': !input.isHidden && state.detailsHasBeenShown,
+    'no_tools': state.noTools
+  }]>
   <header>
     <h2.image-name>${input.imageData.name}</h2>
     <span.close-btn>

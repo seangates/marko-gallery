@@ -11,9 +11,23 @@
   }
 }
 
+@keyframes details-rev{
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 100;
+  }
+
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
 .ig-details {
   background-color: black;
-  display: none;
+  display: block;
   height: 100vh;
   left: 0;
   opacity: 0;
@@ -23,9 +37,13 @@
   z-index: -1;
 
   &.show_details {
-    display: block;
-    transform: scale(0.9);
     animation: details 0.25s ease 0.1s 1 forwards;
+  }
+
+  &.hide_details {
+    opacity: 1;
+    z-index: 100;
+    animation: details-rev 0.25s ease 0.1s 1 forwards;
   }
 
   header, footer {

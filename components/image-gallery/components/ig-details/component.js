@@ -4,6 +4,7 @@ let imagesLength = images.length;
 module.exports = class {
   onCreate() {
     this.state = {
+      detailsHasBeenShown: false,
       noTools: false,
       currentImageId: 0,
       prevImageId: 0,
@@ -66,6 +67,7 @@ module.exports = class {
   }
 
   closeDetails() {
+    this.state.detailsHasBeenShown = true;
     this.emit('closeDetails');
   }
 

@@ -5,14 +5,17 @@ class {
       selectedImage: {}
     }
   }
+
   onImageClicked(data) {
     this.state.showImageDetails = true;
     this.state.selectedImage = data;
   }
+
   onCloseDetails() {
     this.state.showImageDetails = false;
     this.state.selectedImage = {};
   }
+  
   onChangeImage(data) {
     console.log(data);
     this.state.selectedImage = data;
