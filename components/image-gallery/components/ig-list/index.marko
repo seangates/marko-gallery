@@ -1,15 +1,8 @@
 class {
-  onCreate() {
-    this.state = {
-      currentImage: {}
-    }
-  }
-  
   imageClicked(evt, el) {
     evt.preventDefault();
 
     let images = require('../../../../data/images');
-
     let imageData = images[parseInt(el.dataset.imageId) - 1];
 
     this.emit('imageClicked', imageData);

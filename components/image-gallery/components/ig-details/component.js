@@ -73,7 +73,8 @@ module.exports = class {
     alert(`The '${action}' button isn't set up yet.`);
   }
 
-  toggleTools() {
+  toggleTools(event) {
+    event.preventDefault();
     this.state.noTools = !this.state.noTools;
   }
 }
