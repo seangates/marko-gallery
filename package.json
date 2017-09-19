@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An example of Marko used to build an image gallery.",
   "repository": {
-    "url": "git@bitbucket.org:seangates/marko-gallery.git",
+    "url": "git@github.com:seangates/marko-gallery.git",
     "type": "git"
   },
   "author": "Sean Gates <oregonwebdev@gmail.com>",
