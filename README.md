@@ -14,8 +14,20 @@ $ yarn
 $ yarn start
 ```
 
-## Testing
+## Testing (coming soon)
 
 ```
 $ yarn test
 ```
+
+## Maintainers
+
+- Sean Gates ([Github: @seangates](https://github.com/seangates)) ([Twitter: @seangates](https://twitter.com/seangates))
+
+## Contribute
+
+Pull requests welcome.
+
+## License
+
+MIT

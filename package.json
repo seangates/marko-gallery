@@ -7,7 +7,7 @@
     "type": "git"
   },
   "author": "Sean Gates <oregonwebdev@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "start": "npm run clean && node index.js",
     "clean": "rm -rf .cache/ $(find . -name '*.marko.js')"

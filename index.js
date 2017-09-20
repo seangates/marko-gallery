@@ -3,10 +3,10 @@ require('marko/node-require');
 let path = require('path');
 let express = require('express');
 let markoExpress = require('marko/express');
-let template = require('./src/pages/home');
 let port = process.env.PORT || 8080;
-
 let isProduction = process.env.NODE_ENV === 'production';
+
+let template = require('./src/pages/home');
 
 let app = express();
 
